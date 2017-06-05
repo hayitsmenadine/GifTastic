@@ -24,7 +24,7 @@ function displayPrincessInfo() {
 
 		prinDiv.append(pOne);
 
-		var image = $("<img>").attr("src", results[i].images.fixed_height.url);
+		var image = $("<img>").attr("src", results[i].images.fixed_width.url);
 
 		prinDiv.append(image);
 
@@ -66,6 +66,7 @@ $("#add-princess").on("click", function(event) {
 $(document).on("click", ".princess", displayPrincessInfo);
 
 renderButtons();
+
 
 
 
